@@ -26,13 +26,13 @@ buttonResetDrawing.addEventListener( "click", () => {
 buttonAddGridAmount.addEventListener( "click", () => {
 
   let gridAmountValid = false;
-  let squaresPerSide = prompt( "How many sqaures per side?" );
+  let squaresPerSide = prompt( "How many sqaures per side?" + "\n" + "(max 100)" );
 
   while ( !gridAmountValid ) {
-    if ( Number.isInteger( parseInt( squaresPerSide ) ) ) {
+    if ( Number.isInteger( parseInt( squaresPerSide ) ) && parseInt( squaresPerSide ) <= 100 ) {
       gridAmountValid = true;
     } else {
-      squaresPerSide = prompt( "Invalid input, try again. How many sqaures per side?" );
+      squaresPerSide = prompt( "Invalid input, try again." + "\n" + "How many sqaures per side?" + "\n" + "(max 100)" );
     }
   }
 
