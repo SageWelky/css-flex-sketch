@@ -1,0 +1,38 @@
+html, body {
+  height: 100%;
+  width: 100%;
+}
+
+#application-container, #settings-bar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#application-container {
+  flex-direction: column;
+  height: 100%;
+  width: auto;
+}
+
+#settings-bar {
+  flex-shrink: 0;
+}
+
+#container-grids {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-wrap: wrap;
+  flex: 1;
+  flex-shrink: 0;
+}
+
+.grid-square {
+  border: 1px solid black;
+  box-sizing: border-box;
+}
+
+.active-grid {
+  background-color: gray;
+}
