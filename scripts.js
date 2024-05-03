@@ -13,6 +13,16 @@ containerGrids.addEventListener( "mouseover", ( event ) => {
 });
 
 
+buttonResetDrawing.addEventListener( "click", () => {
+
+  let activeGrids = containerGrids.querySelectorAll(".active-grid");
+  activeGrids.forEach( (activeGrid) => {
+    activeGrid.classList.remove("active-grid");
+  });
+
+});
+
+
 buttonAddGridAmount.addEventListener( "click", () => {
 
   let gridAmountValid = false;
